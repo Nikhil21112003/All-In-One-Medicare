@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>All In One Medicare</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/utilities.css" />
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- header -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content d-flex justify-content-between align-items-center">
+                    <div class="left-nav">
+                        <div class="brand-and-toggler d-flex align-items-center justify-content-between">
+                            <button type="button" class="d-none navbar-show-btn">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <a href="#" class="navbar-brand d-flex align-items-center logo">
+                                <img src="assets/images/ALL IN ONE MEDICARE-logos_black.png" width="170px" alt="">
+                            </a>
+                        </div>
+                        <div class="hr"></div>
+                        <div id="pick-address" class="pincode">
+                            <a href="">
+                                <div class="top-location">
+                                    <img src="assets/images/thunder_6778937.png" alt="pin-add" width="16px">
+                                    <p>Express delivery to</p>
+                                </div>
+                                <h4>Select Pincode</h4>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="search-bar">
+                        <form action="search">
+                            <input type="search" placeholder="search near hospital">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="c-cZuCZG c-cZuCZG-gtZKQU-size-large c-cZuCZG-dmsdwv-rotate-up c-cZuCZG-ihxkVYy-css">
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="M16.4895 15.5071C16.2159 15.2339 15.7727 15.2344 15.4996 15.508C15.2264 15.7816 15.2269 16.2248 15.5005 16.4979L16.4895 15.5071ZM19.5055 20.4954C19.7791 20.7685 20.2223 20.7681 20.4954 20.4945C20.7685 20.2209 20.7681 19.7777 20.4945 19.5046L19.5055 20.4954ZM8.69953 14.8717C9.03535 15.0632 9.46285 14.9462 9.65437 14.6104C9.8459 14.2745 9.72891 13.847 9.39309 13.6555L8.69953 14.8717ZM8.22704 12.5081C8.03023 12.1754 7.60093 12.0651 7.26818 12.262C6.93542 12.4588 6.82522 12.8881 7.02202 13.2208L8.22704 12.5081ZM15.5005 16.4979L19.5055 20.4954L20.4945 19.5046L16.4895 15.5071L15.5005 16.4979ZM17.3175 10.8957C17.3175 14.3068 14.5038 17.0914 11.0088 17.0914V18.4914C15.2554 18.4914 18.7175 15.1014 18.7175 10.8957H17.3175ZM11.0088 17.0914C7.51375 17.0914 4.7 14.3068 4.7 10.8957H3.3C3.3 15.1014 6.76211 18.4914 11.0088 18.4914V17.0914ZM4.7 10.8957C4.7 7.4846 7.51375 4.7 11.0088 4.7V3.3C6.76211 3.3 3.3 6.69002 3.3 10.8957H4.7ZM11.0088 4.7C14.5038 4.7 17.3175 7.4846 17.3175 10.8957H18.7175C18.7175 6.69002 15.2554 3.3 11.0088 3.3V4.7ZM9.39309 13.6555C8.91098 13.3806 8.50913 12.9851 8.22704 12.5081L7.02202 13.2208C7.42809 13.9074 8.00629 14.4763 8.69953 14.8717L9.39309 13.6555Z"
+                                        fill="#8897A2"></path>
+                                </svg>
+                            </div>
+                            <button
+                                class="c-PJLV c-bXbWpx c-bXbWpx-joLzpF-justify-center c-bXbWpx-joJbDg-align-center c-bXbWpx-igKcZLf-css">
+                                <span
+                                    class="c-kkmdlQ c-kkmdlQ-hjFTIG-structure-button1Title c-kkmdlQ-jdOIsX-weight-semiBold c-kkmdlQ-dWajWX-structure-subTitle1 c-kkmdlQ-ieAinwS-css">Search</span>
+                            </button>
+                        </form>
+                    </div>  -->
+                    <!-- 
+                    <div class="search-box">
+                        <div class="row">
+                            <input type="text" id="input-box" placeholder="Search Anything" autocomplete="off">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="result-box">
+
+                        </div>
+                    </div> -->
+
+                    <div class="wrapper">
+                        <div class="search-input">
+                            <a href="" target="_blank" hidden></a>
+                            <input type="text" placeholder="Search Near Hospitals">
+                            <div class="autocom-box">
+                                <!-- here list are inserted from javascript -->
+                            </div>
+                            <div class="icon"><i class="fas fa-search"></i></div>
+                        </div>
+                    </div>
+                    <div class="right-nav">
+                        <div class="login">
+                            <!-- <a href="https://lordicon.com/"></a> -->
+                            <a href="login.html" class="anchor-login">
+                                <lord-icon src="https://cdn.lordicon.com/ivwmwsbm.json" trigger="hover"
+                                    state="hover-looking-around" colors="primary:#000000,secondary:#000000"
+                                    style="width:30px;">
+                                </lord-icon>
+                                <p>Login</p>
+                                <!-- <i class="fa-solid fa-user"></i> -->
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="" class="anchor-cart">
+                                <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+                                <lord-icon src="https://cdn.lordicon.com/pzvzlrnl.json" trigger="hover"
+                                    colors="primary:#000000,secondary:#000000,tertiary:#000000" style="width:30px;">
+                                </lord-icon>
+                                <p>Cart</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="header-sec">
+            <div class="container">
+                <div class="navbar-content d-flex justify-content-between align-items-center">
+                    <!-- <div class = "brand-and-toggler d-flex align-items-center justify-content-between">
+                        <a href = "#" class = "navbar-brand d-flex align-items-center">
+                            <span class="brand-shape d-inline-block text-white">M</span>
+                            <span class="brand-text fw-7">Medimoor</span>
+                        </a>
+                        <button type = "button" class = "d-none navbar-show-btn">
+                            <i class = "fas fa-bars"></i>
+                        </button>
+                    </div> -->
+                    <!-- <div class="justify-content-between-ul"> -->
+                    <div class="navbar-box " id="navbox">
+                        <button type="button" class="navbar-hide-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                        <ul class="navbar-nav d-flex justify-content-between-ul  align-items-center">
+                            <li class="nav-item">
+                                <a href="hospital.html" class="nav-link  text-nowrap">Hospitals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link  text-nowrap">Ambulance No</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link  text-nowrap">Pharmacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link  text-nowrap">Clinic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link  text-nowrap">Your Report</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </header>
+        <header class="header">
+            <!-- <nav class = "navbar">
+                    <div class="container">
+                        <div class="navbar-content d-flex justify-content-between align-items-center">
+                            <div class = "navbar-box">
+                                <button type = "button" class = "navbar-hide-btn">
+                                    <i class = "fas fa-times"></i>
+                                </button>
+
+                                <ul class = "navbar-nav d-flex align-items-center">
+                                    <li class = "nav-item">
+                                        <a href = "#" class = "nav-link text-white  text-nowrap">Hospitals</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "#" class = "nav-link text-white text-nowrap">Ambulance No</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "#" class = "nav-link text-white text-nowrap">Pharmacy</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "#" class = "nav-link text-white text-nowrap">Clinic</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "#" class = "nav-link text-white text-nowrap">Your Report</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav> -->
+
+            <div class="element-one">
+                <img src="assets/images/element-img-1.png" alt="">
+            </div>
+
+            <div class="banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <div class="banner-left">
+                            <div class="content-wrapper">
+                                <h1 class="banner-title">Virtual healthcare <br> for you</h1>
+                                <p class="text text-white">All in one medicare provides progressive, and affordable
+                                    healthcare,
+                                    accessible on mobile and onnline for everyone</p>
+                                <a href="#" class="btn btn-secondary">Consult today</a>
+                            </div>
+                        </div>
+
+                        <div class="banner-right d-flex align-items-center justify-content-end">
+                            <img src="assets/images/banner-image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <main>
+            <section class="sc-services">
+                <div class="services-shape">
+                    <img src="assets/images/curve-shape-1.png" alt="">
+                </div>
+
+                <div class="container">
+                    <div class="services-content">
+                        <div class="title-box text-center">
+                            <div class="content-wrapper">
+                                <h3 class="title-box-name">Our services</h3>
+                                <div class="title-separator mx-auto"></div>
+                                <p class="text title-box-text">We provide you the best choices for you. Adjust it to
+                                    your health needs and make sure you undergo treatment with our highly qualified
+                                    doctors you can consult with us which type of service is suitable for your health
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services-list">
+                            <div class="services-item">
+                                <a href="">
+                                    <div class="item-icon">
+                                        <img src="assets/images/service-icon-1.png" alt="service icon">
+                                    </div>
+                                    <h5 class="item-title fw-7">Search doctor</h5>
+                                    <p class="text">Choose your doctor form thousands of specialist, general and trusted
+                                        hospitals.</p>
+                                </a>
+                            </div>
+
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="assets/images/service-icon-2.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Online pharmacy</h5>
+                                <p class="text">Buy your medicines with our mobile application with a simple delivery
+                                    system</p>
+                            </div>
+
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="assets/images/service-icon-3.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Consultation</h5>
+                                <p class="text">Free consultation with our trusted doctors and get the best
+                                    recommendations.</p>
+                            </div>
+
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="assets/images/service-icon-4.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Check Your Report</h5>
+                                <p class="text">Free consultation with our trusted doctors and get the best
+                                    recommendations.</p>
+                            </div>
+
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="assets/images/service-icon-5.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Clinic</h5>
+                                <p class="text">You can get 24/7 urgent care for yourself or your children and your
+                                    lovely family.</p>
+                            </div>
+
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="assets/images/service-icon-6.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Tracking</h5>
+                                <p class="text">Track and save your mental history and health data</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center services-main-btn">
+                            <button type="button" class="btn btn-primary-outline">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-grid sc-grid-one">
+                <div class="container">
+                    <div class="grid-content d-grid align-items-center">
+                        <div class="grid-img">
+                            <img src="assets/images/health-care-img.png" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <div class="content-wrapper text-start">
+                                <div class="title-box">
+                                    <h3 class="title-box-name text-white">Leading healthcare providers</h3>
+                                    <div class="title-separator mx-auto"></div>
+                                </div>
+
+                                <p class="text title-box-text text-white">All in one medicare provides progressive, and
+                                    affordable
+                                    healthcare, accessible on mobile and online for everyone. To us, it's not just work.
+                                    We take pride in the solutions we deliver</p>
+                                <button type="button" class="btn btn-white-outline">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="sc-services specialist-service">
+                <div class="services-shape">
+                    <img src="assets/images/curve-shape-1.png" alt="">
+                </div>
+
+                <div class="container">
+                    <div class="services-content">
+                        <div class="title-box text-center">
+                            <div class="content-wrapper">
+                                <h3 class="title-box-name">Top-searched specialties</h3>
+                                <div class="title-separator mx-auto"></div>
+                                <p class="text title-box-text">All in one provide best specialisties for you. adjust it
+                                    to your health needs and make sure you undergo treatment with our highly qualified
+                                    doctor you can consult with us which type of service is suitable for your health
+                                </p>
+                            </div>
+                        </div>
+                        <div class="top-specialist">
+                            <div class="specialist-list">
+                                <div class="specialist-item">
+                                    <a href="" class="dentist-anchor">
+                                        <div class="item-icon">
+                                            <img src="https://www.fortishealthcare.com/drupal-data/2023-03/Dental%20sciences.svg"
+                                                alt="Dental Science" width="200px">
+                                        </div>
+                                        <h5 class="item-title fw-7">Dentist</h5>
+                                        <p class="text">Choose Dental specialist from thousands of specialist, general
+                                            and trusted hospitals</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="specialist-list">
+                                <div class="specialist-item">
+                                    <a href="" class="dermatology-anchor">
+                                        <div class="item-icon">
+                                            <img src="https://www.fortishealthcare.com/drupal-data/2023-03/Dermatology.svg" alt="Dermatology" width="200px">
+                                        </div>
+                                        <h5 class="item-title fw-7">Dermatology</h5>
+                                        <p class="text">Choose Dermatology specialist from thousands of specialist, general
+                                            and trusted hospitals</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="specialist-list">
+                                <div class="specialist-item">
+                                    <a href="" class="obstetrics-anchor">
+                                        <div class="item-icon">
+                                            <img src="https://www.fortishealthcare.com/drupal-data/2023-03/Obstetrics.svg" alt="Obstetrics and Gynaecology" width="200px">
+                                        </div>
+                                        <h5 class="item-title fw-7">Obstetrics and Gynaecology</h5>
+                                        <p class="text">Choose Obstetrics and Gynaecology specialist from thousands of specialist, general
+                                            and trusted hospitals</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-specialist">
+                            <div class="specialist-list">
+                                <div class="specialist-item">
+                                    <a href="" class="Ophthalmology-anchor">
+                                        <div class="item-icon">
+                                            <img src="https://www.fortishealthcare.com/drupal-data/2023-03/Ophthalmology.svg" alt="Ophthalmology" width="200px">
+                                        </div>
+                                        <h5 class="item-title fw-7">Ophthalmology</h5>
+                                        <p class="text">Choose Ophthalmology specialist from thousands of specialist, general
+                                            and
+                                            trusted hospitals</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="specialist-list">
+                                <div class="specialist-item">
+                                    <a href="" class="Orthopaedics-anchor">
+                                        <div class="item-icon">
+                                            <img src="https://www.fortishealthcare.com/drupal-data/2023-03/Orthopaedics.svg" alt="Orthopaedics" width="200px">
+                                        </div>
+                                        <h5 class="item-title fw-7">Orthopaedics</h5>
+                                        <p class="text">Choose Orthopaedics specialist from thousands of specialist, general
+                                            and
+                                            trusted hospitals</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="specialist-list">
+                                <div class="specialist-item">
+                                    <a href="" class="general-anchor">
+                                        <div class="item-icon">
+                                            <img src="https://www.fortishealthcare.com/drupal-data/2023-03/General%20Surgery.svg" alt="General Surgery " width="200px">
+                                        </div>
+                                        <h5 class="item-title fw-7">General Surgery</h5>
+                                        <p class="text">Choose General Surgery specialist from thousands of specialist, general
+                                            and
+                                            trusted hospitals</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button type="button">Learn more</button> -->
+            </section>
+            <!-- <section class="sc-grid sc-grid-two">
+                <div class="container">
+                    <div class="grid-content d-grid align-items-center">
+                        <div class="grid-img">
+                            <img src="assets/images/download-image.png" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <div class="content-wrapper text-start">
+                                <div class="title-box">
+                                    <h3 class="title-box-name">Download our mobile apps</h3>
+                                    <div class="title-separator mx-auto"></div>
+                                </div>
+                                <p class="text title-box-text">Our dedicated patient engagement app and web portal allow
+                                    you to access information instantaneously (no tedeous form, long calls, or
+                                    administrative hassle) and securely</p>
+                                <button type="button" class="btn btn-primary-outline">
+                                    Download
+                                    <img src="assets/images/arrow-down.svg" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="sc-feedback">
+                <div class="container">
+                    <div class="feedback-content">
+                        <div class="feedback-element">
+                            <!-- <img src="assets/images/element-img-3.png"> -->
+                            <!-- <img src="assets/images/rashmika-profile.jpg" alt=""> -->
+                        </div>
+                        <div class="feedback-element-2">
+                            <img src="assets/images/element-img-5.png">
+                        </div>
+                        <div class="title-box text-center">
+                            <div class="content-wrapper">
+                                <h3 class="title-box-name text-white">What our customer are saying</h3>
+                                <div class="title-separator mx-auto"></div>
+                            </div>
+                        </div>
+
+                        <div class="feedback-list feedback-slider owl-carousel owl-theme">
+                            <div class="feedback-item d-grid">
+                                <div class="item-left d-flex align-items-center">
+                                    <div class="item-img">
+                                        <!-- <img src="assets/images/person-image.png" alt=""> -->
+                                        <img src="assets/images/rashmika-profile.jpg" alt="">
+                                    </div>
+                                    <div class="item-info text-white">
+                                        <p class="fw-7 name">Giorgia Meloni</p>
+                                        <!-- <span class="designation fw-4">Founder Circle</span> -->
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <p class="text text-white">"Our dedicated patient engagement app and web portal
+                                        allow you to access information instantaneoulsy (no tedeous form, long calls, or
+                                        administrative hassle) and securely"</p>
+                                </div>
+                            </div>
+
+                            <div class="feedback-item d-grid">
+                                <div class="item-left d-flex align-items-center">
+                                    <div class="item-img">
+                                        <!-- <img src="assets/images/person-image.png" alt=""> -->
+                                        <img src="assets/images/men-profile.jpg" alt="">
+                                    </div>
+                                    <div class="item-info text-white">
+                                        <p class="fw-7 name">Edward Newgate</p>
+                                        <!-- <span class="designation fw-4">Founder Circle</span> -->
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <p class="text text-white">"Our dedicated patient engagement app and web portal
+                                        allow you to access information instantaneoulsy (no tedeous form, long calls, or
+                                        administrative hassle) and securely"</p>
+                                </div>
+                            </div>
+
+                            <div class="feedback-item d-grid">
+                                <div class="item-left d-flex align-items-center">
+                                    <div class="item-img">
+                                        <!-- <img src="assets/images/person-image.png" alt=""> -->
+                                        <img src="assets/images/women-profile.jpg" alt="">
+                                    </div>
+                                    <div class="item-info text-white">
+                                        <p class="fw-7 name">Jenna Ortega</p>
+                                        <!-- <span class="designation fw-4">Founder Circle</span> -->
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <p class="text text-white">"Our dedicated patient engagement app and web portal
+                                        allow you to access information instantaneoulsy (no tedeous form, long calls, or
+                                        administrative hassle) and securely"</p>
+                                </div>
+                            </div>
+
+                            <div class="feedback-item d-grid">
+                                <div class="item-left d-flex align-items-center">
+                                    <div class="item-img">
+                                        <img src="assets/images/person-image.png" alt="">
+                                    </div>
+                                    <div class="item-info text-white">
+                                        <p class="fw-7 name">John Doe</p>
+                                        <!-- <span class="designation fw-4">Founder Circle</span> -->
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <p class="text text-white">"Our dedicated patient engagement app and web portal
+                                        allow you to access information instantaneoulsy (no tedeous form, long calls, or
+                                        administrative hassle) and securely"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="sc-articles">
+                <div class="articles-shape">
+                    <img src="assets/images/curve-shape-2.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="articles-content">
+                        <div class="articles-element">
+                            <img src="assets/images/element-img-2.png" alt="">
+                        </div>
+                        <div class="title-box text-center">
+                            <div class="content-wrapper">
+                                <h3 class="title-box-name">Check out our latest article</h3>
+                                <div class="title-separator mx-auto"></div>
+                            </div>
+                        </div>
+
+                        <div class="articles-list d-flex flex-wrap justify-content-center">
+                            <article class="articles-item">
+                                <div class="item-img">
+                                    <img src="assets/images/article-img-1.png">
+                                </div>
+                                <div class="item-body">
+                                    <div class="item-title">Disease detection, check up in the laboratory</div>
+                                    <p class="text">In this case, the role of the health laboratory is very important to
+                                        do a disease detection ...</p>
+                                    <a href="#" class="item-link text-blue d-flex align-items-baseline">
+                                        <span class="item-link-text">Read more</span>
+                                        <span class="item-link-icon">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="articles-item">
+                                <div class="item-img">
+                                    <img src="assets/images/article-img-2.png">
+                                </div>
+                                <div class="item-body">
+                                    <div class="item-title">Herbal medicines that are safe for consumption</div>
+                                    <p class="text">Herbal medicine is very widely used at this time because of its very
+                                        good for your health ...</p>
+                                    <a href="#" class="item-link text-blue d-flex align-items-baseline">
+                                        <span class="item-link-text">Read more</span>
+                                        <span class="item-link-icon">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="articles-item">
+                                <div class="item-img">
+                                    <img src="assets/images/article-img-3.png">
+                                </div>
+                                <div class="item-body">
+                                    <div class="item-title">Natural care for healthy facial skin</div>
+                                    <p class="text">A healthy lifestyle should start from now and also for your skin
+                                        health ...</p>
+                                    <a href="#" class="item-link text-blue d-flex align-items-baseline">
+                                        <span class="item-link-text">Read more</span>
+                                        <span class="item-link-icon">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-list d-grid text-white">
+                        <div class="footer-item">
+                            <a href="#" class="navbar-brand d-flex align-items-center">
+                                <img src="assets/images/ALL IN ONE MEDICARE-logos_black.png" width="170px">
+                            </a>
+                            <p class="text-white">All in one medicare provides progressive, and affordable healthcare,
+                                accessible
+                                on mobile and online for everyone</p>
+                            <p class="text-white copyright-text">&copy; All in one medicare PTY LTD 2023. All rights
+                                reserved.</p>
+                        </div>
+
+                        <div class="footer-item">
+                            <h3 class="footer-item-title">Company</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Find a doctor</a></li>
+                                <li><a href="#">Apps</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-item">
+                            <h3 class="footer-item-title">Region</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Indonesia</a></li>
+                                <li><a href="#">Singapore</a></li>
+                                <li><a href="#">Hongkong</a></li>
+                                <li><a href="#">Canada</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-item">
+                            <h3 class="footer-item-title">Help</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Help center</a></li>
+                                <li><a href="#">Contact support</a></li>
+                                <li><a href="#">Instructions</a></li>
+                                <li><a href="#">How it works</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-element-1">
+                <!-- <img src="assets/images/element-img-4.png" alt=""> -->
+            </div>
+            <div class="footer-element-2">
+                <!-- <img src="assets/images/element-img-5.png" alt=""> -->
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <!-- cart js  -->
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+    <!-- login js  -->
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+
+</html>
